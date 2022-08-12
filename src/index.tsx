@@ -14,7 +14,8 @@ const sliderSettings = {
   title: "Catálogo de Exemplo",
   showArrows: true,
   showDots: true,
-  slidesToShow: 3
+  slidesToShow: 3,
+  arrowsDirection: 'arrowsTop'
 }
 
 const root = ReactDOM.createRoot(
@@ -25,8 +26,8 @@ root.render(
     <div className="main">
       <Slider {...sliderSettings}>
         {slides.map((item, index) => (
-          <div key={index}>
-            <div><img src={item.image} alt={item.title} /></div>
+          <div key={index} className="slider-custom">
+            <div><img src={item.image} alt={item.title} className="slider-image" /></div>
 
             <span>{item.title}</span>
             <span>{item.price}</span>

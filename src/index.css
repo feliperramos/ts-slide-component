@@ -1,15 +1,10 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css?family=Manrope");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
 }
 
 .dotsDefault {
@@ -19,11 +14,30 @@ code {
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
   transition: background-color 0.6s ease;
 }
 
 .active,
 .dotsDefault:hover {
   background-color: #717171;
+}
+
+.dotsDefaultDirection {
+  display: flex;
+  align-items: center;
+}
+
+.arrowsDefaultClass {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
 }

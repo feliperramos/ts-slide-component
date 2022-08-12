@@ -1,11 +1,12 @@
 import { FC, ReactNode } from 'react';
 
 interface DotsType {
+  showDots?: boolean;
   dotsClass?: string;
   slideLength: number;
 }
 
-const Dots: FC<DotsType> = ({ dotsClass, slideLength }) => {
+const Dots: FC<DotsType> = ({ showDots, dotsClass, slideLength }) => {
 
   let renderDots: ReactNode[] = []
 
@@ -18,7 +19,7 @@ const Dots: FC<DotsType> = ({ dotsClass, slideLength }) => {
     ]
   }
 
-  return <>{renderDots}</>
+  return <div className={showDots ? "dots" : ""}>{renderDots}</div>
 }
 
 export default Dots
