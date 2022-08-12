@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Meias Naruto",
+    "image": "https://img.lojasrenner.com.br/item/582648981/zoom/1.jpg",
+    "price": 180,
+    "rate": 4.7
+  },
+  {
+    "title": "Playstation 5",
+    "image": "https://files.tecnoblog.net/wp-content/uploads/2020/11/playstation_5_produto-700x700.png",
+    "price": 4800,
+    "rate": 4.4
+  },
+  {
+    "title": "Violão Clássico",
+    "image": "https://madeinbrazil.fbitsstatic.net/img/p/violao-classico-nylon-gc5ce-nylon-cutaway-takamine-natural-na-69818/256301.jpg?w=800&h=800&v=no-change&qs=ignore",
+    "price": 599.99,
+    "rate": 4.1
+  }
+]

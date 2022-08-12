@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  max-width: 1000px;
+}
+
+.slider {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}

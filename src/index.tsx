@@ -1,15 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import Slider from './Slider';
+
+import slides from './mock/slide.json'
+
+import "./slider.css"
+
+const sliderSettings = {
+  sliderClass: "slider",
+  title: "Catálogo de Exemplo",
+  showArrows: true,
+  showDots: true,
+  slidesToShow: 3
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="main">
+      <Slider {...sliderSettings}>
+        {slides.map((item, index) => (
+          <div key={index}>
+            <div><img src={item.image} alt={item.title} /></div>
+
+            <span>{item.title}</span>
+            <span>{item.price}</span>
+          </div>
+        ))}
+      </Slider>
+    </div>
   </React.StrictMode>
 );
 
